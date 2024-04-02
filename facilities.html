@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparent Text with Image</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Set max width for image */
+        .max-w-image {
+            max-width: 100%; /* Image will scale down to fit its parent container */
+        }
+    </style>
+</head>
+
+<body class="bg-gray-200 flex justify-center items-center min-h-screen">
+    <div class="relative w-full md:w-3/4 lg:w-1/2">
+        <!-- Image -->
+        <img src="facilities.png" alt="Your Image" class="max-w-image w-full h-auto rounded-lg border border-black" />
+
+        <!-- Transparent Text -->
+        <div class="absolute bottom-0 left-0 w-full bg-white bg-opacity-40 text-black p-4 rounded-b-lg">
+            <h5 class="text-2xl font-bold text-center mb-2">aLab</h5>
+            <p class="text-center">Android App Development Center</p>
+        </div>
+    </div>
+</body>
+
+</html>
